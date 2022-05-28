@@ -1,0 +1,11 @@
+export const resourcePoints = 1000
+export const gunmanSize = 40
+export const minAge = 18
+export const maxAge = 65
+export const minWeapon = 10
+export const maxWeapon = 50
+export const noManZone = 50
+export const maxGunmenPerWave = 10
+export const waveProbability = 10 // %
+export const transitionDuration = 13
+export const gunmanSpeed = 200

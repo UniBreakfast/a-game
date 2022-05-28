@@ -1,0 +1,37 @@
+body {
+  background: green;
+  user-select: none;
+}
+
+#gunmen-count {
+  font-size: 60px;
+  font-weight: bold;
+  color: rgb(255, 215, 105);
+  text-shadow: 0 0 1px #000;
+  text-align: center;
+}
+
+.gunman {
+  height: 40px;
+  left: 0;
+  position: absolute;
+  transition: 1s linear;
+}
+
+.shot {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background: black;
+  border-radius: 50%;
+  animation: fade 10s linear forwards;
+}
+
+@keyframes fade {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
