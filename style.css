@@ -16,6 +16,7 @@ body {
   left: 0;
   position: absolute;
   transition: 1s linear;
+  z-index: 10;
 }
 
 .shot {
@@ -25,12 +26,19 @@ body {
   background: black;
   border-radius: 50%;
   animation: fade 10s linear forwards;
+  z-index: 2;
+}
+
+.blood-mess {
+  position: absolute;
+  width: 30px;
+  height: 10px;
+  background: crimson;
+  border-radius: 50%;
+  animation: fade 30s linear forwards;
 }
 
 @keyframes fade {
-  from {
-    opacity: 1;
-  }
   to {
     opacity: 0;
   }

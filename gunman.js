@@ -2,6 +2,7 @@ import { names } from "./names.js";
 import { rnd, rndItem } from "./rnd.js";
 import { gunmanContainer } from "./elements.js";
 import { Shot } from "./shot.js";
+import { BloodMess } from "./mess.js";
 
 import {
   gunmanSize,
@@ -75,6 +76,10 @@ export class Gunman extends EventTarget {
 
   die() {
     this.dispatchEvent(new CustomEvent("death"));
+
+    const {left, bottom} = this.el.getBoundingClientRect();
+    new BloodMess(left + 5, bottom - 5);
+
     this.remove();
   }
 
